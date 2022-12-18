@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    justify-self: center;
+}
+.apps, .account {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px
+}
+.apps:hover, .account:hover {
+    background: #eee;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+img {
+    justify-self: center;
+}
+
+.middle {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+.search:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.input {
+    border: white;
+    width: 510px;
+
+}
+
+.input:focus {
+    outline: 0;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.searche:hover {
+    cursor: default;
+}
+
+.icon-mic, .icon-camera, .icon-apps {
+    position: relative;
+}
+
+.icon-mic:hover > .mictooltip,
+.icon-camera:hover > .cameratooltip,
+.icon-apps:hover > .apptooltip {
+    visibility: visible;
+}
+
+.mictooltip, .cameratooltip, .apptooltip{
+    visibility: hidden;   
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 0.6em;
+    background-color: black;/*hsla(0, 0, 0, 0.8);*/
+    display: inline-block;
+    padding: 5px 7px;
+    top: 150%;
+    left: 50%;
+    margin-left: -55px;
+    color: white;
+}
+.mictooltip::after, .cameratooltip::after {
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    z-index: 40;
+    content: "";
+    /*background: black;*/
+    /*width: 7px;
+    height: 7px;*/
+    /*display: inline-block;*/
+    border-style: solid;
+    border-color: transparent transparent black  transparent ;
+    border-width: 6px;   
+}
+.apptooltip::after {
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    z-index: 40;
+    content: "";
+    /*background: black;*/
+    /*width: 7px;
+    height: 7px;*/
+    /*display: inline-block;*/
+    border-style: solid;
+    border-width: 6px;  
+
+}
