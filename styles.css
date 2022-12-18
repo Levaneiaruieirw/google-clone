@@ -1,0 +1,54 @@
+
+body{
+	font-size: 15px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+a {
+	 color: hsl(228, 45%, 44%);
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+
+}
+.container > *{
+	flex: 1;
+}
+
+
+.supervisor{
+	top: 285px;
+	border-top-style: solid;
+	border-top-color: hsl(180, 62%, 55%);
+	border-top-width: 4.7px;
+	margin-bottom: 30px;
+}
+.calculator{ 
+	right: 20px;
+	top: 291px;
+	border-top-style: solid;
+	border-top-color: hsl(212, 86%, 64%);
+	
+}
+.karma{
+	border-top-style: solid;
+	border-top-color: hsl(34, 97%, 64%);
+	bodrer-top-width: 4.7px;
+}
+.Teambuilder{
+	border-top-style: solid;
+	border-top-color: hsl(0, 78%, 62%);
+	border-top-width: 4.7px;
+}
+@media (min-width: 1440px){
+	.container{
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+
+
+
